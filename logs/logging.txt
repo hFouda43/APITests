@@ -1,0 +1,215 @@
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 4313,
+    "category": {
+        "id": 1,
+        "name": "Dogs"
+    },
+    "name": "Nutella",
+    "photoUrls": [
+        "test"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "tags"
+        }
+    ],
+    "status": "available"
+}
+HTTP/1.1 200 OK
+Date: Thu, 12 Jan 2023 17:55:17 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 4313,
+    "category": {
+        "id": 1,
+        "name": "Dogs"
+    },
+    "name": "Nutella",
+    "photoUrls": [
+        "test"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "tags"
+        }
+    ],
+    "status": "available"
+}
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/4313
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	pet_Id=4313
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 12 Jan 2023 17:55:18 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 4313,
+    "category": {
+        "id": 1,
+        "name": "Dogs"
+    },
+    "name": "Nutella",
+    "photoUrls": [
+        "test"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "tags"
+        }
+    ],
+    "status": "available"
+}
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet/4313
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	name=Nutella_updated
+				status=Sold
+Path params:	pet_Id=4313
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 12 Jan 2023 17:55:19 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "4313"
+}
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/4313
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	pet_Id=4313
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 12 Jan 2023 17:55:21 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 4313,
+    "category": {
+        "id": 1,
+        "name": "Dogs"
+    },
+    "name": "Nutella_updated",
+    "photoUrls": [
+        "test"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "tags"
+        }
+    ],
+    "status": "Sold"
+}
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/pet/4313
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	pet_Id=4313
+Headers:		api_key=special-key
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 12 Jan 2023 17:55:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "4313"
+}
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/pet/4313
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	pet_Id=4313
+Headers:		api_key=special-key
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Thu, 12 Jan 2023 17:55:22 GMT
+Content-Length: 0
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)

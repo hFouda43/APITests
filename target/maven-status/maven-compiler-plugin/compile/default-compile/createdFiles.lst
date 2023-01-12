@@ -1,0 +1,3 @@
+org\petstore\pojo\CategoryDetailsList.class
+org\petstore\pojo\TagsDetailsList.class
+org\petstore\pojo\AddPet.class
