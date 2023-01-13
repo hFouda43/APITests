@@ -7,7 +7,7 @@ import io.cucumber.java.en.Then;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.petstore.pojo.AddPet;
+import org.petstore.pojo.Pet;
 import org.petstore.resources.EndPoints;
 import org.petstore.resources.TestDataBuild;
 import org.petstore.resources.Utils;
@@ -29,8 +29,8 @@ public class StepDefinition extends Utils {
     Response response;
 
     //Defining the global response objects used by all tests
-    static AddPet addPetResponseObject;
-    AddPet getPetResponseObject;
+    static Pet addPetResponseObject;
+    Pet getPetResponseObject;
 
     //Step definitions implementation
 
@@ -63,7 +63,7 @@ public class StepDefinition extends Utils {
     //AddPet API assertion
     @And("verify that the pet name is correctly added")
     public void verifyThatThePetNameIsCorrectlyAdded() {
-        addPetResponseObject = response.as(AddPet.class);
+        addPetResponseObject = response.as(Pet.class);
         Assert.assertEquals(addPetResponseObject.getName(), data.addPetPayload().getName());
     }
 
@@ -83,7 +83,7 @@ public class StepDefinition extends Utils {
     //GetPet API assertion
     @And("Verify that the user can get the added pet using the provided id")
     public void verifyThatTheUserCanGetTheAddedPetUsingTheProvidedId() {
-        getPetResponseObject = response.as(AddPet.class);
+        getPetResponseObject = response.as(Pet.class);
         Assert.assertEquals(getPetResponseObject.getId(), addPetResponseObject.getId());
     }
 
@@ -114,7 +114,7 @@ public class StepDefinition extends Utils {
 //Validating that the pet has been updated
     @And("the name is updated with {string} and status with {string} correctly")
     public void theNameIsUpdatedWithAndStatusWithCorrectly(String updatedPetName, String petStatus) {
-        getPetResponseObject = response.as(AddPet.class);
+        getPetResponseObject = response.as(Pet.class);
         Assert.assertEquals(getPetResponseObject.getName(), updatedPetName);
         Assert.assertEquals(getPetResponseObject.getStatus(), petStatus);
     }

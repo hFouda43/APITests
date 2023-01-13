@@ -2,7 +2,7 @@ package org.petstore.pojo;
 
 import java.util.ArrayList;
 
-public class AddPet {
+public class Pet {
     private int id;
     private CategoryDetailsList category;
     private String name;

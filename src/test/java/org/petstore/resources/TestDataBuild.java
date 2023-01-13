@@ -1,6 +1,6 @@
 package org.petstore.resources;
 
-import org.petstore.pojo.AddPet;
+import org.petstore.pojo.Pet;
 import org.petstore.pojo.CategoryDetailsList;
 import org.petstore.pojo.TagsDetailsList;
 
@@ -8,8 +8,8 @@ import java.util.ArrayList;
 
 public class TestDataBuild {
 
-    public AddPet addPetPayload(){
-        AddPet addPetRequestPayLoad=new AddPet();
+    public Pet addPetPayload(){
+        Pet addPetRequestPayLoad=new Pet();
         CategoryDetailsList category=new CategoryDetailsList();
         category.setId(1);
         category.setName("Dogs");
